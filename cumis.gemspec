@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Steven Yap", "Jack Huang"]
   spec.email         = ["stevenyap@futureworkz.com", "jack@futureworkz.com"]
   spec.summary       = %q{Cumis is a Ruby CMS for u and i!}
-  spec.description   = %q{Cumis is a Ruby CMS for Rails and Rails_Admin. Install the gem and use it to quickly setup pages for your users to edit.}
+  spec.description   = %q{Cumis is a Ruby CMS that works with Rails and RailsAdmin. Install the gem and use it to quickly setup pages for your users to edit.}
   spec.homepage      = "http://github.com/Neember/cumis"
   spec.license       = "MIT"
 
