@@ -30,7 +30,9 @@ After installing the gem, run the following:
 rails generate cumis:install
 ```
 
-It will create a migration file (CreatePages) for you which is a database table to store the webpage content.  
+It will create two files for you:
+- a migration file (CreatePages) which is a database table to store the webpage content.  
+- a view file (/app/views/cumis/pages/show.html.erb) to display the page
 Next, run the database migration:
 
 ```ruby
@@ -47,13 +49,13 @@ If not, you can also create a page via `rails console`.
 ## Routing a Page
 
 Once a page is created, you need to setup routes for it in your `routes.rb`.  
-The route to be created is in the format of: `get '<url-name>' => 'pages#show', ref: '<page-ref>'`  
+The route to be created is in the format of: `get '<url-name>' => 'cumis_pages#show', ref: '<page-ref>'`  
 The `page-ref` field corresponds to the `ref` field in the Page table.
 
 The following example routes `http://example.com/about-us` to the About Us page:
 
 ```ruby
-get 'about-us' => 'pages#show', id: 'about-us'
+get 'about-us' => 'cumis_pages#show', ref: 'about-us'
 ```
 
 ## Roadmap
